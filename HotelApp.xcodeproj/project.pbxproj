@@ -11,13 +11,14 @@
 		1ED303C42A20F12900ECFB43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED303C32A20F12900ECFB43 /* ContentView.swift */; };
 		1ED303C62A20F12B00ECFB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED303C52A20F12B00ECFB43 /* Assets.xcassets */; };
 		1ED303C92A20F12B00ECFB43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED303C82A20F12B00ECFB43 /* Preview Assets.xcassets */; };
-		1ED303D02A20F21900ECFB43 /* GoogleService-Info-.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ED303CF2A20F21900ECFB43 /* GoogleService-Info-.plist */; };
+		1ED303D02A20F21900ECFB43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ED303CF2A20F21900ECFB43 /* GoogleService-Info.plist */; };
 		1ED303D32A20F2C100ECFB43 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED303D22A20F2C100ECFB43 /* FirebaseAnalytics */; };
 		1ED303D52A20F2C100ECFB43 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED303D42A20F2C100ECFB43 /* FirebaseAuth */; };
 		1ED303D72A20F2C100ECFB43 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED303D62A20F2C100ECFB43 /* FirebaseDatabase */; };
 		1ED303D92A20F2C100ECFB43 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED303D82A20F2C100ECFB43 /* FirebaseFirestore */; };
 		1ED303DB2A20F2C100ECFB43 /* FirebaseFunctions in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED303DA2A20F2C100ECFB43 /* FirebaseFunctions */; };
 		1ED303DD2A20F2C100ECFB43 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED303DC2A20F2C100ECFB43 /* FirebaseStorage */; };
+		A87F40182A2239C8008A6106 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F40172A2239C8008A6106 /* MainPage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,7 +27,8 @@
 		1ED303C32A20F12900ECFB43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1ED303C52A20F12B00ECFB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ED303C82A20F12B00ECFB43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1ED303CF2A20F21900ECFB43 /* GoogleService-Info-.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info-.plist"; sourceTree = "<group>"; };
+		1ED303CF2A20F21900ECFB43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		A87F40172A2239C8008A6106 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -66,6 +68,7 @@
 			isa = PBXGroup;
 			children = (
 				1ED303C12A20F12900ECFB43 /* HotelAppApp.swift */,
+				A87F40172A2239C8008A6106 /* MainPage.swift */,
 				1ED303C32A20F12900ECFB43 /* ContentView.swift */,
 				1ED303C52A20F12B00ECFB43 /* Assets.xcassets */,
 				1ED303C72A20F12B00ECFB43 /* Preview Content */,
@@ -76,7 +79,7 @@
 		1ED303C72A20F12B00ECFB43 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				1ED303CF2A20F21900ECFB43 /* GoogleService-Info-.plist */,
+				1ED303CF2A20F21900ECFB43 /* GoogleService-Info.plist */,
 				1ED303C82A20F12B00ECFB43 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
@@ -152,7 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ED303C92A20F12B00ECFB43 /* Preview Assets.xcassets in Resources */,
-				1ED303D02A20F21900ECFB43 /* GoogleService-Info-.plist in Resources */,
+				1ED303D02A20F21900ECFB43 /* GoogleService-Info.plist in Resources */,
 				1ED303C62A20F12B00ECFB43 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +169,7 @@
 			files = (
 				1ED303C42A20F12900ECFB43 /* ContentView.swift in Sources */,
 				1ED303C22A20F12900ECFB43 /* HotelAppApp.swift in Sources */,
+				A87F40182A2239C8008A6106 /* MainPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
