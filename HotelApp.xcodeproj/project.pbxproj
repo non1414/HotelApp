@@ -72,10 +72,10 @@
 			isa = PBXGroup;
 			children = (
 				1ED303C12A20F12900ECFB43 /* HotelAppApp.swift */,
+				21B26E3D2A2C933000ED1D1C /* Splash.swift */,
+				21232E2A2A2DBA00001C0FD0 /* Login.swift */,
 				A87F40172A2239C8008A6106 /* MainPage.swift */,
 				1ED303C32A20F12900ECFB43 /* ContentView.swift */,
-				21232E2A2A2DBA00001C0FD0 /* Login.swift */,
-				21B26E3D2A2C933000ED1D1C /* Splash.swift */,
 				1ED303C52A20F12B00ECFB43 /* Assets.xcassets */,
 				1ED303C72A20F12B00ECFB43 /* Preview Content */,
 			);
