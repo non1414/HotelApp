@@ -9,7 +9,7 @@ import SwiftUI
 
 struct Login: View {
     var body: some View {
-       
+        
         ScrollView{
             VStack{
                 HStack{
@@ -71,17 +71,17 @@ struct Login: View {
                         .frame(width: 358, height: 52)
                     
                     TextField("Enter Your Passowrd", text: /*@START_MENU_TOKEN@*//*@PLACEHOLDER=Value@*/.constant("")/*@END_MENU_TOKEN@*/)
-                        
+                    
                     
                         .padding(.leading, 40)
                 }.padding(.bottom, 16)
                 
                 ZStack{
-                RoundedRectangle(cornerRadius: 10)
-                    .fill(Color("Color"))
-                    .frame(width: 191, height: 47)
-                    .shadow(color: Color(red: 0.5647, green: 0.5647, blue: 0.5647).opacity(0.5), radius: 4, x: 0, y: 2)
-                
+                    RoundedRectangle(cornerRadius: 10)
+                        .fill(Color("Color"))
+                        .frame(width: 191, height: 47)
+                        .shadow(color: Color(red: 0.5647, green: 0.5647, blue: 0.5647).opacity(0.5), radius: 4, x: 0, y: 2)
+                    
                     Text("Login")
                         .font(.headline)
                         .fontWeight(.medium)
