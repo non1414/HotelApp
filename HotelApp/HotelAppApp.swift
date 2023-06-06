@@ -22,7 +22,7 @@ struct HotelAppApp: App {
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
     var body: some Scene {
         WindowGroup {
-            Splash()
+            guestStatus()
         }
     }
 }

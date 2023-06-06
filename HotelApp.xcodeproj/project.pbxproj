@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E22DC7C2A2F102500517F41 /* guestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E22DC7B2A2F102500517F41 /* guestStatus.swift */; };
+		1E22DC7E2A2F10A000517F41 /* reviewed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E22DC7D2A2F10A000517F41 /* reviewed.swift */; };
 		1ED303C22A20F12900ECFB43 /* HotelAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED303C12A20F12900ECFB43 /* HotelAppApp.swift */; };
 		1ED303C42A20F12900ECFB43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED303C32A20F12900ECFB43 /* ContentView.swift */; };
 		1ED303C62A20F12B00ECFB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED303C52A20F12B00ECFB43 /* Assets.xcassets */; };
@@ -24,6 +26,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E22DC7B2A2F102500517F41 /* guestStatus.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = guestStatus.swift; sourceTree = "<group>"; };
+		1E22DC7D2A2F10A000517F41 /* reviewed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewed.swift; sourceTree = "<group>"; };
 		1ED303BE2A20F12900ECFB43 /* HotelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED303C12A20F12900ECFB43 /* HotelAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelAppApp.swift; sourceTree = "<group>"; };
 		1ED303C32A20F12900ECFB43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +79,8 @@
 				21B26E3D2A2C933000ED1D1C /* Splash.swift */,
 				21232E2A2A2DBA00001C0FD0 /* Login.swift */,
 				A87F40172A2239C8008A6106 /* MainPage.swift */,
+				1E22DC7B2A2F102500517F41 /* guestStatus.swift */,
+				1E22DC7D2A2F10A000517F41 /* reviewed.swift */,
 				1ED303C32A20F12900ECFB43 /* ContentView.swift */,
 				1ED303C52A20F12B00ECFB43 /* Assets.xcassets */,
 				1ED303C72A20F12B00ECFB43 /* Preview Content */,
@@ -173,8 +179,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E22DC7E2A2F10A000517F41 /* reviewed.swift in Sources */,
 				1ED303C42A20F12900ECFB43 /* ContentView.swift in Sources */,
 				21B26E3E2A2C933000ED1D1C /* Splash.swift in Sources */,
+				1E22DC7C2A2F102500517F41 /* guestStatus.swift in Sources */,
 				1ED303C22A20F12900ECFB43 /* HotelAppApp.swift in Sources */,
 				21232E2B2A2DBA00001C0FD0 /* Login.swift in Sources */,
 				A87F40182A2239C8008A6106 /* MainPage.swift in Sources */,

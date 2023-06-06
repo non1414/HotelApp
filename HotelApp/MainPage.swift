@@ -28,7 +28,7 @@ struct MainPage: View {
                 if selected == 1 {
                     
                     NavigationLink {
-                        ContentView()
+                       reviewed()
                     } label: {
                         
                         HStack{
@@ -50,6 +50,7 @@ struct MainPage: View {
                 else {
                     
                     //Reviewd Card
+                    
                     
                     ZStack(alignment: .leading){
                         
