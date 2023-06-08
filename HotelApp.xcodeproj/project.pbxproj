@@ -10,10 +10,8 @@
 		1E22DC7C2A2F102500517F41 /* guestStatus.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E22DC7B2A2F102500517F41 /* guestStatus.swift */; };
 		1E22DC7E2A2F10A000517F41 /* reviewed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E22DC7D2A2F10A000517F41 /* reviewed.swift */; };
 		1ED303C22A20F12900ECFB43 /* HotelAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED303C12A20F12900ECFB43 /* HotelAppApp.swift */; };
-		1ED303C42A20F12900ECFB43 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED303C32A20F12900ECFB43 /* ContentView.swift */; };
 		1ED303C62A20F12B00ECFB43 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED303C52A20F12B00ECFB43 /* Assets.xcassets */; };
 		1ED303C92A20F12B00ECFB43 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1ED303C82A20F12B00ECFB43 /* Preview Assets.xcassets */; };
-		1ED303D02A20F21900ECFB43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1ED303CF2A20F21900ECFB43 /* GoogleService-Info.plist */; };
 		1ED303D32A20F2C100ECFB43 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED303D22A20F2C100ECFB43 /* FirebaseAnalytics */; };
 		1ED303D52A20F2C100ECFB43 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED303D42A20F2C100ECFB43 /* FirebaseAuth */; };
 		1ED303D72A20F2C100ECFB43 /* FirebaseDatabase in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED303D62A20F2C100ECFB43 /* FirebaseDatabase */; };
@@ -22,6 +20,11 @@
 		1ED303DD2A20F2C100ECFB43 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 1ED303DC2A20F2C100ECFB43 /* FirebaseStorage */; };
 		21232E2B2A2DBA00001C0FD0 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21232E2A2A2DBA00001C0FD0 /* Login.swift */; };
 		21B26E3E2A2C933000ED1D1C /* Splash.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21B26E3D2A2C933000ED1D1C /* Splash.swift */; };
+		830B85662A30B9580071E698 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B85652A30B9580071E698 /* Model.swift */; };
+		830B856A2A30BAA90071E698 /* FirebaseManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 830B85692A30BAA90071E698 /* FirebaseManager.swift */; };
+		830B856E2A30BB0C0071E698 /* FirebaseFirestoreSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 830B856D2A30BB0C0071E698 /* FirebaseFirestoreSwift */; };
+		83C6385D2A31413B0007F308 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 83C6385C2A31413B0007F308 /* GoogleService-Info.plist */; };
+		83C638622A31462E0007F308 /* SDWebImageSwiftUI in Frameworks */ = {isa = PBXBuildFile; productRef = 83C638612A31462E0007F308 /* SDWebImageSwiftUI */; };
 		A87F40182A2239C8008A6106 /* MainPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = A87F40172A2239C8008A6106 /* MainPage.swift */; };
 /* End PBXBuildFile section */
 
@@ -30,12 +33,13 @@
 		1E22DC7D2A2F10A000517F41 /* reviewed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = reviewed.swift; sourceTree = "<group>"; };
 		1ED303BE2A20F12900ECFB43 /* HotelApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = HotelApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1ED303C12A20F12900ECFB43 /* HotelAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HotelAppApp.swift; sourceTree = "<group>"; };
-		1ED303C32A20F12900ECFB43 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1ED303C52A20F12B00ECFB43 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1ED303C82A20F12B00ECFB43 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		1ED303CF2A20F21900ECFB43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		21232E2A2A2DBA00001C0FD0 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
 		21B26E3D2A2C933000ED1D1C /* Splash.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Splash.swift; sourceTree = "<group>"; };
+		830B85652A30B9580071E698 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		830B85692A30BAA90071E698 /* FirebaseManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseManager.swift; sourceTree = "<group>"; };
+		83C6385C2A31413B0007F308 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
 		A87F40172A2239C8008A6106 /* MainPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainPage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -47,6 +51,8 @@
 				1ED303D72A20F2C100ECFB43 /* FirebaseDatabase in Frameworks */,
 				1ED303D92A20F2C100ECFB43 /* FirebaseFirestore in Frameworks */,
 				1ED303DB2A20F2C100ECFB43 /* FirebaseFunctions in Frameworks */,
+				830B856E2A30BB0C0071E698 /* FirebaseFirestoreSwift in Frameworks */,
+				83C638622A31462E0007F308 /* SDWebImageSwiftUI in Frameworks */,
 				1ED303D32A20F2C100ECFB43 /* FirebaseAnalytics in Frameworks */,
 				1ED303D52A20F2C100ECFB43 /* FirebaseAuth in Frameworks */,
 				1ED303DD2A20F2C100ECFB43 /* FirebaseStorage in Frameworks */,
@@ -61,6 +67,7 @@
 			children = (
 				1ED303C02A20F12900ECFB43 /* HotelApp */,
 				1ED303BF2A20F12900ECFB43 /* Products */,
+				830B856C2A30BB0C0071E698 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -77,11 +84,13 @@
 			children = (
 				1ED303C12A20F12900ECFB43 /* HotelAppApp.swift */,
 				21B26E3D2A2C933000ED1D1C /* Splash.swift */,
+				830B85692A30BAA90071E698 /* FirebaseManager.swift */,
+				830B85652A30B9580071E698 /* Model.swift */,
 				21232E2A2A2DBA00001C0FD0 /* Login.swift */,
 				A87F40172A2239C8008A6106 /* MainPage.swift */,
 				1E22DC7B2A2F102500517F41 /* guestStatus.swift */,
 				1E22DC7D2A2F10A000517F41 /* reviewed.swift */,
-				1ED303C32A20F12900ECFB43 /* ContentView.swift */,
+				83C6385C2A31413B0007F308 /* GoogleService-Info.plist */,
 				1ED303C52A20F12B00ECFB43 /* Assets.xcassets */,
 				1ED303C72A20F12B00ECFB43 /* Preview Content */,
 			);
@@ -91,10 +100,16 @@
 		1ED303C72A20F12B00ECFB43 /* Preview Content */ = {
 			isa = PBXGroup;
 			children = (
-				1ED303CF2A20F21900ECFB43 /* GoogleService-Info.plist */,
 				1ED303C82A20F12B00ECFB43 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		830B856C2A30BB0C0071E698 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -120,6 +135,8 @@
 				1ED303D82A20F2C100ECFB43 /* FirebaseFirestore */,
 				1ED303DA2A20F2C100ECFB43 /* FirebaseFunctions */,
 				1ED303DC2A20F2C100ECFB43 /* FirebaseStorage */,
+				830B856D2A30BB0C0071E698 /* FirebaseFirestoreSwift */,
+				83C638612A31462E0007F308 /* SDWebImageSwiftUI */,
 			);
 			productName = HotelApp;
 			productReference = 1ED303BE2A20F12900ECFB43 /* HotelApp.app */;
@@ -151,6 +168,7 @@
 			mainGroup = 1ED303B52A20F12900ECFB43;
 			packageReferences = (
 				1ED303D12A20F2C100ECFB43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				83C638602A31462D0007F308 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */,
 			);
 			productRefGroup = 1ED303BF2A20F12900ECFB43 /* Products */;
 			projectDirPath = "";
@@ -167,8 +185,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1ED303C92A20F12B00ECFB43 /* Preview Assets.xcassets in Resources */,
-				1ED303D02A20F21900ECFB43 /* GoogleService-Info.plist in Resources */,
 				1ED303C62A20F12B00ECFB43 /* Assets.xcassets in Resources */,
+				83C6385D2A31413B0007F308 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -179,10 +197,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				830B85662A30B9580071E698 /* Model.swift in Sources */,
 				1E22DC7E2A2F10A000517F41 /* reviewed.swift in Sources */,
-				1ED303C42A20F12900ECFB43 /* ContentView.swift in Sources */,
 				21B26E3E2A2C933000ED1D1C /* Splash.swift in Sources */,
 				1E22DC7C2A2F102500517F41 /* guestStatus.swift in Sources */,
+				830B856A2A30BAA90071E698 /* FirebaseManager.swift in Sources */,
 				1ED303C22A20F12900ECFB43 /* HotelAppApp.swift in Sources */,
 				21232E2B2A2DBA00001C0FD0 /* Login.swift in Sources */,
 				A87F40182A2239C8008A6106 /* MainPage.swift in Sources */,
@@ -314,6 +333,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HotelApp/Preview Content\"";
+				DEVELOPMENT_TEAM = UZ6DLV7BDB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -342,6 +362,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"HotelApp/Preview Content\"";
+				DEVELOPMENT_TEAM = UZ6DLV7BDB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -394,6 +415,14 @@
 				minimumVersion = 10.0.0;
 			};
 		};
+		83C638602A31462D0007F308 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SDWebImage/SDWebImageSwiftUI";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -426,6 +455,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 1ED303D12A20F2C100ECFB43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
 			productName = FirebaseStorage;
+		};
+		830B856D2A30BB0C0071E698 /* FirebaseFirestoreSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1ED303D12A20F2C100ECFB43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestoreSwift;
+		};
+		83C638612A31462E0007F308 /* SDWebImageSwiftUI */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 83C638602A31462D0007F308 /* XCRemoteSwiftPackageReference "SDWebImageSwiftUI" */;
+			productName = SDWebImageSwiftUI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

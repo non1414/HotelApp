@@ -20,9 +20,17 @@ class AppDelegate: NSObject, UIApplicationDelegate {
 struct HotelAppApp: App {
     // register app delegate for Firebase setup
     @UIApplicationDelegateAdaptor(AppDelegate.self) var delegate
+    @StateObject private var firebaseManager = FirebaseManager()
     var body: some Scene {
         WindowGroup {
-            guestStatus()
+            Group{
+                if firebaseManager.auth.currentUser == nil {
+                    Splash()
+                } else {
+                    MainPage()
+                }
+            }
+                .environmentObject(FirebaseManager())
         }
     }
 }

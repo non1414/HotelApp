@@ -10,7 +10,7 @@ import SwiftUI
 struct Splash: View {
     
     @State var isActive: Bool = false
-    
+    @EnvironmentObject private var firebaseManager: FirebaseManager
     var body: some View {
         ZStack{
             
@@ -67,5 +67,6 @@ struct Splash: View {
 struct Splash_Previews: PreviewProvider {
     static var previews: some View {
         Splash()
+            .environmentObject(FirebaseManager())
     }
 }

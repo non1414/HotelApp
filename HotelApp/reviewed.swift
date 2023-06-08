@@ -6,10 +6,11 @@
 //
 
 import SwiftUI
+import SDWebImageSwiftUI
 
 struct reviewed: View {
     
-    @State private var isPresented = false
+    @State private var isPresented = true
     
     @State private var fullName = "Afnan Mohammed Alhabi"
     @State private var phoneNumber = "0582656994"
@@ -17,14 +18,16 @@ struct reviewed: View {
     @State private var idNumber = "11058456935"
     @State private var expDate = Date()
     @State private var date = "20-04-2023"
-    
     @State private var showingCredits = false
+    @Environment(\.dismiss) private var dismiss
+    var reservation: Reservation
+    @EnvironmentObject private var firebaseManager: FirebaseManager
     var body: some View {
         Button("Show Sheet") {
             isPresented = true
         }
         .sheet(isPresented: $isPresented, onDismiss: {
-            // Cells
+            dismiss.callAsFunction()
         }) {
             VStack {
                 VStack{
@@ -85,7 +88,7 @@ struct reviewed: View {
                                         }
                                         
                                         
-                                        Text(fullName)
+                                        Text(reservation.userName)
                                             .font(.system(size: 17, weight: .regular))
                                     }
                                     HStack{
@@ -99,7 +102,7 @@ struct reviewed: View {
                                         }
                                         
                                         
-                                        Text(phoneNumber)
+                                        Text(reservation.phoneNumber)
                                             .font(.system(size: 17, weight: .regular))
                                     }
                                     HStack{
@@ -113,7 +116,7 @@ struct reviewed: View {
                                         }
                                         
                                         
-                                        Text(reservationCode)
+                                        Text(reservation.code)
                                             .font(.system(size: 17, weight: .regular))
                                     }
                                     HStack{
@@ -127,7 +130,7 @@ struct reviewed: View {
                                         }
                                         
                                         
-                                        Text(idNumber)
+                                        Text(reservation.userId)
                                             .font(.system(size: 17, weight: .regular))
                                     }
                                     HStack{
@@ -141,7 +144,7 @@ struct reviewed: View {
                                         }
                                         
                                         
-                                        Text(date)
+                                        Text(reservation.selectedDate.convertDate(formattedString: .formattedType1))
                                             .font(.system(size: 17, weight: .regular))
                                     }
                                     HStack{
@@ -154,31 +157,75 @@ struct reviewed: View {
                                                 .foregroundColor(.white)
                                         }.padding(.bottom, 120)
                                         
-                                        VStack{
-                                            
-                                        }.frame(width: 267, height: 120.11)
-                                            .background(Color("imageContainerBackground"))
-                                            .cornerRadius(8.64)
-                                        
+                                        WebImage(url: URL(string: reservation.imageUrlString))
+                                           // Supports options and context, like `.delayPlaceholder` to show placeholder only when error
+                                           .resizable() // Resizable like SwiftUI.Image, you must use this modifier or the view will use the image bitmap size
+                                           
+                                           .placeholder(Image(systemName: "photo")) // Placeholder Image
+                                           // Supports ViewBuilder as well
+                                           .placeholder {
+                                               Rectangle().foregroundColor(.gray)
+                                           }
+                                           .indicator(.activity) // Activity Indicator
+                                           .transition(.fade(duration: 0.5)) // Fade Transition with duration
+                                           .scaledToFill()
+                                           .frame(width: 267, height: 120.11)
+                                               .background(Color("imageContainerBackground"))
+                                               .cornerRadius(8.64)
                                     }
-                                }  .frame(height: 600, alignment: .bottom)
+                                }.frame(height: 600, alignment: .bottom)
+                                    .overlay(alignment: .bottom) {
+                                        HStack(spacing: 20){
+                                            Button {
+                                                var reservation = reservation
+                                                reservation.status = .approved
+                                                firebaseManager.modifyReserv(reservation: reservation)
+                                                isPresented = false
+                                            } label: {
+                                                Label("Approved", systemImage: "checkmark")
+                                                    .foregroundColor(.white)
+                                                    .frame(width: 160, height: 50)
+                                                    .background(Color(#colorLiteral(red: 0.3962286711, green: 0.8161615133, blue: 0.465750277, alpha: 1)))
+                                                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                                            }
+                                            
+                                            Button {
+                                                var reservation = reservation
+                                                reservation.status = .rejected
+                                                firebaseManager.modifyReserv(reservation: reservation)
+                                                isPresented = false
+                                            } label: {
+                                                Label("Decline", systemImage: "xmark")
+                                                    .foregroundColor(.red)
+                                                    .frame(width: 160, height: 50)
+                                                    .background(Color(#colorLiteral(red: 0.9450979829, green: 0.9450982213, blue: 0.9450981021, alpha: 1)))
+                                                    .clipShape(RoundedRectangle(cornerRadius: 25))
+                                            }
+
+                                        }.padding()
+                                            
+                                    }
                                     .padding(.top, 190)
                                     .scrollContentBackground(.hidden)
                                 
                             }.padding(.top,120)
                             // .frame(width: 358, height: 600)
                                 .padding(.bottom, 23)
+                            
                         }
+                        
                     }
                     
                 }
             }
+           
         }
     }
 }
 
 struct reviewed_Previews: PreviewProvider {
     static var previews: some View {
-        reviewed()
+        reviewed(reservation: .init())
+            .environmentObject(FirebaseManager())
     }
 }
