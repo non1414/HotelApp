@@ -13,6 +13,7 @@ struct Login: View {
     @State var password: String = ""
     @State var isShowingHomeView: Bool = false
     @State var hotelName: HotelsCategory = .marriott_Hotel
+   // @State var hotelName: HotelsCategory = .Atlantic_Hotel
     var body: some View {
         NavigationView {
             ScrollView{

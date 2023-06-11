@@ -23,7 +23,7 @@ struct reviewed: View {
     var reservation: Reservation
     @EnvironmentObject private var firebaseManager: FirebaseManager
     var body: some View {
-        Button("Show Sheet") {
+        Button("") {
             isPresented = true
         }
         .sheet(isPresented: $isPresented, onDismiss: {

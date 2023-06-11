@@ -27,7 +27,7 @@ struct HotelAppApp: App {
                 if firebaseManager.auth.currentUser == nil {
                     Splash()
                 } else {
-                    MainPage()
+                    Splash()
                 }
             }
                 .environmentObject(FirebaseManager())

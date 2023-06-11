@@ -52,8 +52,8 @@ class FirebaseManager: NSObject, ObservableObject {
                 return
             }
             guard let reservations = querySnapshot?.documents.compactMap({try? $0.data(as: Reservation.self)}) else {return}
-//            self.reservations = reservations.filter{$0.hotel.name == HotelsCategory.marriott_Hotel.title}
-            self.reservations = reservations
+          self.reservations = reservations.filter{$0.hotel.name == HotelsCategory.marriott_Hotel.title}
+           self.reservations = reservations
         }
     }
     

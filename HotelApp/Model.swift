@@ -72,7 +72,7 @@ enum HotelsCategory: String, CaseIterable {
     case Ayan_Hotel
     case Movenpick_Hotel
     case Hilton
-    
+    case Atlantic_Hotel
     var title: String {
         switch self {
         case .marriott_Hotel:  return "marriott Hotel"
@@ -80,6 +80,7 @@ enum HotelsCategory: String, CaseIterable {
         case .Ayan_Hotel:      return "Rafal Hotel"
         case .Movenpick_Hotel: return "Ayan Hotel"
         case .Hilton:          return "Movenpick Hotel"
+        case .Atlantic_Hotel:          return "Atlantic Hotel"
         }
     }
     
@@ -115,6 +116,8 @@ struct MockData {
         
             .init(id: "Movenpick Hotel", imageName: "Movenpick_Hotel", name: "Movenpick Hotel",
                   location: "Riyadh", phoneNumber: "", link: "", termsAndConditions: ""),
+        .init(id: "Atlantic Hotel", imageName: "Atlantic_Hotel", name: "Atlantic Hotel",
+              location: "Jeddah", phoneNumber: "", link: "", termsAndConditions: ""),
     ]
 }
 
