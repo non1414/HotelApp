@@ -22,12 +22,9 @@ struct guestStatus: View {
                     VStack{
                         ZStack(alignment: .top) {
                             VStack{
-                                Rectangle()
-                                    .fill(Color.white)
-                                //.stroke(Color.gray, lineWidth: 1)
-                                //.stroke(Color.black, lineWidth: 10, fill: Color.white)
+                                RoundedRectangle(cornerRadius: 12)
+                                    .stroke(Color("strokeGry"), lineWidth: 1)
                                     .frame(maxWidth: 358, maxHeight: 545)
-                                    .border(Color("gryStroke"))
                                     .cornerRadius(12)
                                 
                             }

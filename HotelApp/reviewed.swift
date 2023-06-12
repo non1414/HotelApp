@@ -46,12 +46,13 @@ struct reviewed: View {
                                     }
                                 }
                                 .padding()
-                                Rectangle()
-                                    .fill(Color.white)
-                                    .frame(maxWidth: 358, maxHeight: 545)
-                                    .border(Color("gryStroke"))
-                                    .cornerRadius(12)
-                                //.stroke(Color.gray, lineWidth: 1)
+                                VStack{
+                                    RoundedRectangle(cornerRadius: 12)
+                                        .stroke(Color("strokeGry"), lineWidth: 1)
+                                        .frame(maxWidth: 358, maxHeight: 545)
+                                        .cornerRadius(12)
+                                    
+                                }
                                 
                             }.padding(.top, 130)
                                 .border(Color("gryStroke"))
@@ -208,9 +209,9 @@ struct reviewed: View {
                                     .padding(.top, 190)
                                     .scrollContentBackground(.hidden)
                                 
-                            }.padding(.top,120)
+                            }.padding(.top, 120)
                             // .frame(width: 358, height: 600)
-                                .padding(.bottom, 23)
+                                .padding(.bottom, 120)
                             
                         }
                         
